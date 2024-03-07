@@ -1,0 +1,181 @@
+/* COLOR CODE REF
+    Main Blue:
+0d65d8
+    Grey:
+848c9a
+    Off Black:
+27282c
+*/
+
+
+/* Add the following media query for mobile screens */
+@media (min-width:320px)  {
+    
+    body {
+        margin: 10px;
+        font-family: 'Open Sans';
+        padding: 10px;
+    }
+
+    .profile-picture {
+        border-radius: 50%;
+        margin-top: 10px;
+        max-width: 15%;
+        float: right;
+    }
+
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropbtn {
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 20px;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        display: block;
+        text-decoration: none;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    /* Add styles for the skip link */
+.skip-link {
+    position: absolute;
+    top: 5px;
+    right: 300px;
+    background-color: #0d65d8;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.skip-link:focus {
+    opacity: 1;
+}
+
+    .charities-section {
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 80px; 
+    }
+
+    .charities-section p {
+        font-size: 12px;
+        margin-bottom: 20px;
+        color: #848c9a;
+        text-align: left;  
+        margin-left: 20px;
+    }
+    
+
+.charity-card {
+    margin-bottom: 30px;
+}
+
+.charity-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.charity-card h2 {
+    margin-top: 10px;
+}
+
+.charity-image {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;  
+}
+
+.progress-bar-container {
+    width: 80%;
+    background-color: #ddd;
+    height: 2px;
+    margin: 10px auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #1E90FF;
+    width: 0; /* Adjust this width based on the progress */
+    border-radius: 5px;
+}
+
+.total-raised-gray {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.total-raised-blue {
+    color: #1E90FF;
+    font-size: 20px;
+}
+
+
+
+.navigation-bar {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navigation bar is above other elements on the page */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-size: 10px;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: #242526;
+    display: flex;
+    flex-direction: column;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #1E90FF;
+}
+
+.icon {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.icon:hover {
+    color: #1E90FF;  
+}
+}
