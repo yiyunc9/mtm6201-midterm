@@ -155,8 +155,6 @@ h4 {
 }
 
 
-
-
 /* nav bar */
 
 .navigation-bar {
@@ -206,11 +204,6 @@ a:hover {
         padding: auto;
     }
 
-    .homepage-header {
-        padding: 50px;
-        text-align: center;
-    }
-
     .profile-picture {
         border-radius: 50%;
         max-width: 15%;
@@ -226,11 +219,28 @@ a:hover {
         font-size: 1.2em;
     }
 
+    .homepage-header {
+        padding: 50px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons-container {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin-top: 20px;
+    }
+
     button {
         font-size: 1.2em;
         padding: 15px;
-        margin-top: 20px;
+        width: 48%; /* Adjust the width based on your preference */
+        box-sizing: border-box;
     }
+
 
     hr {
         margin: 50px 0;
