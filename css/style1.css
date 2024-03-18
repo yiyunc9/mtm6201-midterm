@@ -25,7 +25,6 @@ body {
 .profile-picture {
     border-radius: 50%;
     margin-top: 10px;
-    max-width: 15%;
     float: right;
 }
 
@@ -39,6 +38,7 @@ body {
 
 p {
     margin: 40px 0;
+    color:#8e8c8c;
 }
 
 /* Add styles for the skip link */
@@ -247,12 +247,12 @@ a:hover {
     color: #0d65d8;
 }
 
-.icon {
-    font-size: 24px;
-    margin-bottom: 5px;
+.nav img {
+    font-size: 12px;
+    margin-bottom: 10px;
 }
 
-.icon:hover {
+.nav img:hover {
     color: #0d65d8;  
 }
 }
@@ -270,7 +270,7 @@ a:hover {
 
     .profile-picture {
         border-radius: 50%;
-        max-width: 15%;
+        width: 10%;
     }
 
     h1 {
@@ -278,8 +278,17 @@ a:hover {
         font-size: 2em;
     }
 
+    .welcome-text {
+        font-weight: normal; /* unbold the "Welcome" text */
+    }
+    
+    .name-text {
+        font-weight: bold; /* bold the "Matthew Anderson" text */
+    }
+    
     p {
-        margin: 20px 0;
+        margin: 40px 0;
+        color:#8e8c8c;
         font-size: 1.2em;
     }
 
@@ -345,6 +354,7 @@ a:hover {
     .charities-section p {
         font-size: 25px;
         margin-bottom: 50px;
+        margin-top: -80px;
         text-align: center; /* Center the text */
     }
 
@@ -362,13 +372,13 @@ a:hover {
     }
     
     .charity-card img {
-        grid-column: 1 / span 1; /* Image takes the first column */
+        grid-column: 1 / span 1;  
         width: 100%;
         border-radius: 10px;
     }
     
     .text-content {
-        grid-column: 2 / span 1; /* Text content takes the second column */
+        grid-column: 2 / span 1;  
         padding: 10px;
     }
     

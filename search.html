@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
     <link href="css/style3.css" rel="stylesheet">
-             <!-- These are the links for icons -->
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+             <!-- These are the links for fonts -->
+    <!-- These are the links for fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
     <header>
-        <img src="img/profile.jpg" alt="male" class="profile-picture">
+        <img src="img/profile-1x.jpg" srcset="img/profile-1x.jpg 1x, img/profile-2x.jpg 2x" alt="male" class="profile-picture">
         <div class="dropdown">
             <button class="dropbtn">San Francisco &#9662;</button>
             <div class="dropdown-content">
@@ -31,42 +31,31 @@
                 <a href="#">Dallas</a>
                 <a href="#">San Jose</a>
             </div>
+        </div>
     </header>
 
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <div class="search-container" id="main-content">
-        <input type="text" id="searchBox">
-        <div class="searchicon">
-            <span class="material-symbols-outlined">
-                search
-            </span>
+    <a href="#main-content" class="skip-link" role="button">Skip to main content</a>
+    <div class="search-container" id="main-content" role="search">
+        <input type="text" id="searchBox" aria-label="Search">
+        <div class="searchicon" role="button" aria-label="Submit search">
+            <img src="img/searchicon.svg" alt="Search Icon">
         </div>
     </div>
 
         <div class="recent-searches">
             <p>Recently Searched</p>
             <div class="search-item">
-                Ghana Residential Fund <span class="material-symbols-outlined">
-                    north_east
-                    </span>
+                Ghana Residential Fund <img src = "img/arrow.svg" alt="arrow">
             </div>
             <div class="search-item">
-                South Africa <span class="material-symbols-outlined">
-                    north_east
-                    </span>
+                South Africa <img src = "img/arrow.svg" alt="arrow">
             </div>
             <div class="search-item">
-                Malnourishment <span class="material-symbols-outlined">
-                    north_east
-                    </span>
+                Malnourishment <img src = "img/arrow.svg" alt="arrow">
             </div>
             <div class="search-item">
-                Nigeria <span class="material-symbols-outlined">
-                    north_east
-                    </span>
+                Nigeria <img src = "img/arrow.svg" alt="arrow">
             </div>
-             
-        </div>
     </div>
 
 
@@ -89,20 +78,22 @@
 <div class="navigation-bar">
     <nav>
         <a href="index.html">
-            <span class="material-symbols-outlined icon">home</span>
+            <span class="material-symbols-outlined">
+                home
+                </span>
             HOME
         </a>
         <a href="list.html">
-            <span class="material-symbols-outlined icon">favorite</span>
+            <span class="material-symbols-outlined">
+                favorite
+                </span>
             CHARITIES
         </a>
-        <a href="search.html">
-            <span class="material-symbols-outlined icon">search</span>
+        <a href="search.html" >
+            <span class="material-symbols-outlined">
+                search
+                </span>
             EXPLORE
-        </a>
-        <a href="index.html">
-            <span class="material-symbols-outlined icon">person</span>
-            PROFILE
         </a>
     </nav>
 </div>

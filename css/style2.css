@@ -20,7 +20,7 @@
     .profile-picture {
         border-radius: 50%;
         margin-top: 10px;
-        max-width: 15%;
+        
         float: right;
     }
 
@@ -270,7 +270,7 @@ a:hover {
 .profile-picture {
     border-radius: 50%;
     margin-top: 10px;
-    max-width: 15%;
+    width: 10%;
     margin-left: 80px;
     margin-bottom: -90px;
 }

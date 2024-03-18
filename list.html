@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>list</title>
 <link href="css/style2.css" rel="stylesheet">
-         <!-- These are the links for icons -->
-         <link rel="stylesheet"
-         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-         <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-     
+         <!-- These are the links for fonts -->
+        <!-- These are the links for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
     <header>
-        <img src="img/profile.jpg" alt="male" class="profile-picture">
+        <img src="img/profile-1x.jpg" srcset="img/profile-1x.jpg 1x, img/profile-2x.jpg 2x" alt="male" class="profile-picture">
         <div class="dropdown">
             <button class="dropbtn">San Francisco &#9662;</button>
             <div class="dropdown-content">
@@ -30,17 +29,17 @@
                 <a href="#">San Diego</a>
                 <a href="#">Dallas</a>
                 <a href="#">San Jose</a>
-                
+            </div>
             </div>
     </header>
 
 <!-- Add a skip link -->
-<a href="#main-content" class="skip-link">Skip to main content</a>
-    <section class="charities-section" id="main-content">
-        <p>Trending Charities</p>
+<a href="#main-content" class="skip-link" role="button" aria-label="Skip to main content">Skip to main content</a>
+<section class="charities-section" id="main-content" role="region" aria-labelledby="charities-heading">
+    <p id="charities-heading">Trending Charities</p>
         <div class="charities-charities">
         <div class="charity-card">
-            <img src="img/lumberjack.jpg" alt="lumberjack" class="charity-image">
+            <img src="img/lumberjack-1x.jpg" srcset="img/lumberjack-1x.jpg 1x, img/lumberjack-2x.jpg 2x" alt="lumberjack" class="charity-image">
             <div class="text-content">
            <h2>Ghana Residential Fund</h2>
            <div class="progress-bar-container">
@@ -57,7 +56,7 @@
 </div>
         
         <div class="charity-card">
-            <img src="img/make a change.jpg" alt="make a change" class="charity-image">
+            <img src="img/change-1x.jpg" srcset="img/change-1x.jpg 1x, img/change-2x.jpg 2x" alt="make a change" class="charity-image">
             <div class="text-content">
                 <h2>Ghana Residential Fund</h2>
                 <div class="progress-bar-container">
@@ -66,38 +65,37 @@
              <div class="raised-container">
                  <span class="total-raised-label">TOTAL RAISED</span>
                  <div class="amounts-container">
-                     <span class="total-raised-gray">$20,000</span>
-                     <span class="total-raised-blue">$40,000</span>
+                     <span class="total-raised-gray">$40,000</span>
+                     <span class="total-raised-blue">$50,000</span>
                  </div>
              </div>
          </div>
      </div>
-    
+        </div>
 </section>
 
-    <div class="navigation-bar">
-        <nav>
-            <a href="index.html">
-                <span class="material-symbols-outlined icon">home</span>
-                HOME
-            </a>
-            <a href="list.html">
-                <span class="material-symbols-outlined icon">favorite</span>
-                CHARITIES
-            </a>
-            <a href="search.html">
-                <span class="material-symbols-outlined icon">search</span>
-                EXPLORE
-            </a>
-            <a href="index.html">
-                <span class="material-symbols-outlined icon">person</span>
-                PROFILE
-            </a>
-        </nav>
-    </div>
+<div class="navigation-bar">
+    <nav>
+        <a href="index.html">
+            <span class="material-symbols-outlined">
+                home
+                </span>
+            HOME
+        </a>
+        <a href="list.html">
+            <span class="material-symbols-outlined">
+                favorite
+                </span>
+            CHARITIES
+        </a>
+        <a href="search.html" >
+            <span class="material-symbols-outlined">
+                search
+                </span>
+            EXPLORE
+        </a>
+    </nav>
+</div>
     
     </body>
 
-
-
-</body>
